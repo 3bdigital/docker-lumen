@@ -44,5 +44,5 @@ jobs:
         with:
           context: "{{defaultContext}}:${{ matrix.version }}"
           push: true
-          tags: ${{ vars.DOCKERHUB_REPO }}:latest
+          tags: ${{ vars.DOCKERHUB_REPO }}:${{ matrix.version }}
           platforms: linux/amd64,linux/arm64
